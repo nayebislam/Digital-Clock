@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hero w-full min-h-screen text-white relative">
+        <div class="container absolute top-1/2 left-2/4">
+            <div class="clock items-center text-center w-full h-full rounded-lg backdrop-blur-2xl">
+                <h1 class="day " id="day"></h1>
+                <div class="flex items-center justify-center text-center">
+                    <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <p id="AmPm" class="!ml-5 !mt-6 text-5xl"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
